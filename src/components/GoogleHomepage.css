@@ -1,0 +1,172 @@
+.google-homepage {
+  width: 100%;
+  height: 100%;
+  background: #202124;
+  display: flex;
+  flex-direction: column;
+}
+
+.google-header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 15px 20px;
+  gap: 15px;
+}
+
+.header-links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.header-link {
+  color: #e8eaed;
+  text-decoration: none;
+  font-size: 13px;
+  transition: text-decoration 0.2s;
+}
+
+.header-link:hover {
+  text-decoration: underline;
+}
+
+.apps-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e8eaed;
+  transition: background-color 0.2s;
+}
+
+.apps-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.google-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  margin-top: -100px;
+}
+
+.google-logo {
+  margin-bottom: 35px;
+}
+
+.search-container {
+  width: 100%;
+  max-width: 584px;
+  margin-bottom: 35px;
+}
+
+.search-box {
+  width: 100%;
+  height: 44px;
+  background: #303134;
+  border: 1px solid #5f6368;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  gap: 12px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-box:hover {
+  border-color: #8ab4f8;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-box:focus-within {
+  border-color: #8ab4f8;
+  box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+}
+
+.search-icon {
+  color: #9aa0a6;
+  flex-shrink: 0;
+}
+
+.search-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #e8eaed;
+  font-size: 16px;
+}
+
+.search-input::placeholder {
+  color: #9aa0a6;
+}
+
+.voice-search,
+.camera-search {
+  width: 24px;
+  height: 24px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9aa0a6;
+  flex-shrink: 0;
+  transition: color 0.2s;
+}
+
+.voice-search:hover,
+.camera-search:hover {
+  color: #e8eaed;
+}
+
+.shortcuts {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.shortcut {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+  transition: background-color 0.2s;
+}
+
+.shortcut:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.shortcut-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+}
+
+.shortcut-label {
+  color: #e8eaed;
+  font-size: 12px;
+  text-align: center;
+}
+
+.add-shortcut .shortcut-icon {
+  border: 1px dashed #5f6368;
+}

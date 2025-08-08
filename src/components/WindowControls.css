@@ -1,0 +1,35 @@
+.window-controls {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.control-button {
+  width: 46px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9aa0a6;
+  transition: background-color 0.2s;
+}
+
+.control-button:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.control-button.close:hover {
+  background: #e81123;
+  color: white;
+}
+
+.control-button svg {
+  width: 10px;
+  height: 10px;
+}

@@ -1,0 +1,43 @@
+.address-bar {
+  width: 100%;
+  max-width: 500px;
+  height: 32px;
+  position: relative;
+}
+
+.address-bar-inner {
+  width: 100%;
+  height: 100%;
+  background: #202124ff;
+  border: 1px solid #dadce0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  gap: 8px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.address-bar.focused .address-bar-inner {
+  border-color: #4285f4;
+  box-shadow: 0 0 0 1px #4285f4;
+}
+
+.lock-icon {
+  font-size: 14px;
+  color: #5f6368;
+  flex-shrink: 0;
+}
+
+.address-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 14px;
+  color: #202124;
+  background: transparent;
+}
+
+.address-input::placeholder {
+  color: #9aa0a6;
+}
